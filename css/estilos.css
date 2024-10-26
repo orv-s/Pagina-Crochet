@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FBB7C0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    z-index:1000;
+    font-family: "Tajawal", serif;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #1e1e1e;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    color: #782330; 
+    background-color: #F894A3;
+    padding: 10px;
+    margin: -10px;
+    border-radius: 20px;
+
+
+}
+
+nav ul li i {
+    margin-right: 8px;
+}
+
+
+.logo{
+    padding: 0 15px;
+}
+.logo img{
+    width: 95px;
+    height: auto;
+}
+
+main {
+    margin-top: 150px; 
+}
+
+
+.principal {
+    background-image: url('../imagen/fondo1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 40px;
+    border: 2px solid black;
+}
+
+
+
+.principal h1 {
+    font-size: 36px;
+    color: #1e1e1e;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Tajawal", serif;
+    text-transform: bold;
+
+}
+
+.principal p {
+    font-size: 18px;
+    font-family: "Gabarito", sans-serif;
+    color: #1e1e1e;
+    text-align: center;
+}
+
+
+.gallery-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #1e1e1e;
+    margin-top: 40px;
+    margin-bottom: 20px; 
+    font-family: "Signika Negative", serif;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); 
+    gap: 15px; 
+    padding: 10px;
+    background-color: #ffffff;
+    width: 90%; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 100%; 
+    height: auto;
+    border-radius: 25px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.15); 
+}
+
+
+.products-link {
+    text-align: center;
+    margin: 20px 0;
+    margin-bottom: 50px;
+}
+
+.products-link a {
+    background-color: #FBB7C0;
+    color: #1e1e1e;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    font-family: "Gabarito", sans-serif;
+}
+
+.products-link a:hover {
+    background-color: #F894A3;
+}
+
+
+.video-container {
+    background-image: url('../imagen/fondo1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 40px;
+    text-align: center;
+    margin: 50px auto;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.video-container iframe {
+    border-radius: 30px; 
+    max-width: 100%; 
+    width: 100%;
+    height: 500px; /* Ajusta la altura según prefieras */
+}
+
+footer {
+    background-color: #FBB7C0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    color: #1e1e1e;
+    text-decoration: none;
+    margin: 5px 0;
+    font-family: "Gabarito", sans-serif;
+}
+
+footer .social-media a {
+    margin-left: 10px;
+}
+
+footer .social-media a :hover {
+    color: #782330;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+    color: #1e1e1e;
+    font-family: "Gabarito", sans-serif;
+}
